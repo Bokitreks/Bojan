@@ -1,0 +1,762 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+$fl: flex;
+$spa: space-around;
+$spb: space-between;
+$w: wrap;
+$c: center;
+
+$prva: 1400px;
+$druga: 1200px;
+$treca: 920px;
+$cetvrta: 760px;
+$peta: 480px;
+
+@mixin prva {
+    @media (max-width: #{$prva}){
+        @content;
+    }
+}
+
+@mixin druga {
+    @media (max-width: #{$druga}){
+        @content;
+    }
+}
+
+
+@mixin treca {
+    @media (max-width: #{$treca}){
+        @content;
+    }
+}
+
+@mixin cetvrta {
+    @media (max-width: #{$cetvrta}){
+        @content;
+    }
+}
+
+@mixin peta {
+    @media (max-width: #{$peta}){
+        @content;
+    }
+}
+
+body{
+    #naslov{
+        width: 100%;
+        background-color: #000;
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+
+        nav{
+            width: 80%;
+            margin: 0px auto;
+
+            @include treca{
+                width: 90%;
+            }
+
+            @include cetvrta{
+                width: 100%;
+            }
+
+            ul{
+                list-style-type: none;
+                display: $fl;
+                justify-content: $spa;
+                align-items: $c;
+
+                @include peta{
+                    flex-direction: column;
+                }
+
+                li{
+                    margin: 2% 0%;
+
+                    @include cetvrta{
+                        margin: 5% 0%;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        font-size: 1.5em;
+                        color: white;
+                        transition: 0.7s;
+
+                        @include cetvrta{
+                            font-size: 1.1em;
+                        }
+                    }
+
+                    a:hover{
+                        color: purple;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body{ 
+    #glavni{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/ba5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: $fl;
+        justify-content: $spa;
+        align-items: $c;
+        flex-wrap: wrap;
+
+        .strana{
+            display: $fl;
+            flex-direction: column;
+            justify-content: center;
+            align-items: $c;
+            width: 20%;
+            margin-top: 5%;
+
+            @include treca{
+                width: 25%;
+            }
+
+            @include cetvrta{
+                width: 40%;
+                order: 2;
+            }
+
+            .prvi{
+                font-size: 2.2em;
+                color: white;
+                padding-bottom: 8%;
+
+                @include peta{
+                    font-size: 1.6em;
+                }
+            }
+
+            .bar{
+                display: $fl;
+                flex-direction: column;
+                align-items: $c;
+                margin: 5% 0%;
+                width: 100%;
+
+                p{
+                    font-size: 1.5em;
+                    padding-bottom: 5%;
+                    color: white;
+
+                    @include cetvrta{
+                        font-size: 1em;
+                    }
+
+                    @include peta{
+                        font-size: 0.65em;
+                    }
+                }
+
+                .bar1{
+                    width: 100%;
+                    height: 10px;
+                    border: 3px solid #000;
+                    background-color: darken(white, 70%);
+
+                    .popuni{
+                        height: 100%;
+                        background: linear-gradient(#8E2DE2,#4A00E0 )
+                    }
+
+                    .p1{
+                        width: 60%;
+                    }
+
+                    .p2{
+                        width: 80%;
+                    }
+
+                    .p3{
+                        width: 90%;
+                    }
+
+                    .p4{
+                        width: 80%;
+                    }
+
+                    .p5{
+                        width: 70%;
+                    }
+
+                    .p6{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        #sredina{
+            width: 40%;
+            text-align: center;
+            color: white;
+            margin-top: 15%;
+
+            @include druga{
+                width: 50%;
+            }
+
+            @include treca{
+                width: 40%;
+            }
+
+            @include cetvrta{
+                width: 100%;
+                order: 1;
+                margin-top: 28%;
+            }
+
+            @include peta{
+                margin-top: 90%;
+            }
+
+            h1{
+                font-size: 4em;
+
+                @include druga{
+                    font-size: 3.4em;
+                }
+
+                @include treca{
+                    font-size: 2.5em;
+                }
+            }
+
+            p{
+                font-size: 2.3em;
+                padding-top: 2%;
+                text-shadow: 2px 2px tomato;
+
+                @include druga{
+                    font-size: 2em;
+                }
+
+                @include treca{
+                    font-size: 1.5em;
+                }
+            }
+
+            img{
+                width: 25%;
+                margin-top: 5%;
+            }
+        }
+    }
+}
+
+body{
+    #omeni{
+        width: 100%;
+        background-color: black;
+        display: $fl;
+        justify-content: $spa;
+        flex-wrap: wrap;
+        align-items: $c;
+        height: 600px;
+        padding-top: 4%;
+
+        @include druga{
+            padding-bottom: 15%;
+        }
+
+        @include treca{
+            padding-bottom: 30%;
+        }
+
+        @include cetvrta{
+            padding-bottom: 100%;
+        }
+
+        @include peta{
+            padding-top: 25%;
+        }
+
+        #levi{
+            width: 50%;
+            height: 100%;
+            color: white;
+
+            @include cetvrta{
+                width: 90%;
+            }
+            @include peta{
+                margin-top:150px;
+            }
+
+            h2{
+                font-size: 3em;
+                position: relative;
+                padding: 3% 0% 0% 3%;
+
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 18%;
+                    height: 4px;
+                    background-color: purple;
+                    bottom: -5px;
+                    left: 30px;
+
+                    @include peta{
+                        width: 40%;
+                    }
+                }
+            }
+
+            p{
+                padding: 5% 2%;
+                text-align: justify;
+                font-size: 1.3em;
+
+                @include cetvrta{
+                    padding: 15% 0%;
+                }
+
+                @include peta{
+                    font-size: 1em;
+                }
+            }
+            
+            #socials{
+                width: 30%;
+                display: $fl;
+                justify-content: $c;
+                align-items: $c;
+
+                @include prva{
+                    margin-left: 10%;
+                }
+
+                @include druga{
+                    width: 40%;
+                }
+
+                @include peta{
+                    margin: 0px auto;
+                }
+
+                a{
+                    font-size: 3em;
+                    text-decoration: none;
+                    color: white;
+                    transition: 1s;
+                }
+
+                a:nth-of-type(2){
+                    margin: 0% 13%;
+
+                    @include prva{
+                        margin: 0% 20%;
+                    }
+
+                    @include peta{
+                        margin: 0% 35%;
+                    }
+                }
+
+                a:nth-of-type(1):hover{
+                    color: yellow;
+                    transform: translateY(-5px);
+                }
+
+                a:nth-of-type(2):hover{
+                    color: purple;
+                    transform: translateY(-5px);
+                }
+
+                a:nth-of-type(3):hover{
+                    color: blue;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+
+        #desni{
+            width: 40%;
+            height: 100%;
+            display: $fl;
+            justify-content: $c;
+            align-items: $c;
+
+            @include cetvrta{
+                width: 90%;
+                margin: 15% 0%;
+            }
+
+            @include peta{
+                width: 100%;
+            }
+
+            #slika{
+                width: 40%;
+                height: 60%;
+                background-image: url("../images/profi2.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border: 4px solid #fff;
+
+                @include prva{
+                    width: 60%;
+                }
+
+                @include druga{
+                    width: 70%;
+                }
+
+                @include treca{
+                    width: 75%;
+                }
+
+                @include cetvrta{
+                    margin-top: 85%; 
+                }
+
+                @include peta{
+                    margin-bottom: 55%;
+                }
+            }
+            
+        }
+    }
+}
+
+body{
+    #projekti{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: $c;
+        align-items: $c;
+        background-color: #000;
+
+        @include cetvrta{
+            padding-top: 80%;
+        }
+
+        @include peta{
+            padding-top: 90%;
+        }
+
+        h2{
+            font-size: 3.8em;
+            position: relative;
+            padding: 5% 0%;
+            color: white;
+
+            @include peta{
+                font-size: 2.7em;
+                padding: 15% 0%;
+            }
+
+            &:after{
+                content: "";
+                position: absolute;
+                width: 50%;
+                height: 4px;
+                background-color: purple;
+                bottom: 27%;
+                left: 15%;
+
+                @include prva{
+                    bottom: 20%;
+                }
+
+                @include treca{
+                    bottom: 15%;
+                }
+
+                @include cetvrta{
+                    bottom: 5%;
+                }
+
+                @include peta{
+                    bottom: 20%;
+                }
+            }
+        }
+
+        #kutije{
+            width: 100%;
+            display: flex;
+            justify-content: $spa;
+            align-items: $c;
+            flex-wrap: wrap;
+            margin: 5% 0%;
+
+            .kutija{
+                width: 28%;
+                height: 280px;
+                display: flex;
+                justify-content: $c;
+                align-items: $c;
+                border: 4px solid white;
+
+                @include prva{
+                    width: 30%;
+                }
+
+                @include druga{
+                    width: 40%;
+                    margin: 4% 0%;
+                }
+
+                @include treca{
+                    width: 45%;
+                }
+
+                @include cetvrta{
+                    width: 80%;
+                }
+
+                @include peta{
+                    width: 90%;
+                }
+
+                .tekst{
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: $spa;
+                    align-items: $c;
+                    color: white;
+
+                    @include prva{
+                        width: 60%;
+                    }
+
+                    h3{
+                        font-size: 1.7em;
+                    }
+
+                    p{
+                        font-size: 1.2em;
+
+                        @include peta{
+                            font-size: 1em;
+                        }
+                    }
+
+                    a{
+                        display: block;
+                        border: 4px solid white;
+                        padding: 9% 10%;
+                        text-decoration: none;
+                        color: white;
+                    &:hover{
+                        color:tomato;
+                        transform: translateY(-2px);
+                        transition: 0.5s;
+                        
+                    }
+                        @include peta{
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+
+                .slika1{
+                    width: 60%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    border-left: 4px solid white;
+
+                    @include prva{
+                        width: 40%;
+                    }
+                }
+
+                .s1{
+                    background-image: url('../images/projekat1.png');
+                }
+
+                .s2{
+                    background-image: url('../images/projekat2.png');
+                }
+
+                .s3{
+                    background-image: url('../images/projekat3.png');
+                }
+            }
+        }
+    }
+}
+
+body{
+    #footer{
+        width: 100%;
+        background-color: black;
+        color: white;
+
+        #kontakt{
+            width: 90%;
+            margin: 0% auto;
+            display: $fl;
+            flex-direction: column;
+            justify-content: $c;
+            align-items: $c;
+            padding: 5% 0%;
+
+            @include cetvrta{
+                padding-top: 25%;
+            }
+
+            h2{
+                font-size: 3.4em;
+                padding-bottom: 2%;
+
+                @include peta{
+                    font-size: 2.3em;
+                }
+            }
+
+            img{
+                width: 10%;
+
+                @include cetvrta{
+                    width: 20%;
+                }
+
+                @include peta{
+                    width: 30%;
+                }
+            }
+
+            form{
+                display: $fl;
+                flex-direction: column;
+                justify-content: $c;
+                align-items: $c;
+                border: none;
+                width: 30%;
+                margin: 5% 0%;
+
+                @include druga{
+                    width: 40%;
+                }
+
+                @include treca{
+                    width: 50%;
+                }
+
+                @include cetvrta{
+                    width: 70%;
+                }
+
+                @include peta{
+                    width: 90%;
+                    margin: 20% 0%;
+                }
+
+                label{
+                    font-size: 1.6em;
+                }
+
+                .poseban{
+                    padding: 1.5% 2%;
+                    margin: 4% 0%;
+                    width: 100%;
+                    border: none;
+                    border-top: 4px solid purple;
+                    border-bottom: 4px solid purple;
+                    transition: 0.5s;
+                }
+
+                .poseban:focus{
+                    border-left: 4px solid purple;
+                    border-right: 4px solid purple;
+                }
+
+                .poseban::placeholder{
+                    font-family: 'Roboto Mono', monospace
+                }
+
+                textarea{
+                    resize: none;
+                    margin: 4% 0%;
+                    padding: 2% 0% 0% 2%;
+                    width: 100%;
+                    border: none;
+                    border-top: 4px solid purple;
+                    border-bottom: 4px solid purple;
+                    transition: 0.5s;
+                }
+
+                textarea::placeholder{
+                    font-family: 'Roboto Mono', monospace;
+                }
+
+                textarea:focus{
+                    border-left: 4px solid purple;
+                    border-right: 4px solid purple;
+                }
+
+                #dugme{
+                    display: block;
+                    padding: 3% 9%;
+                    margin: 3% 0%;
+                    color: white;
+                    font-size: 1.5em;
+                    border: 4px solid purple;
+                    background-color: black;
+
+                    @include treca{
+                        padding: 5% 17%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body{
+    #gore{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 4%;
+        right: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include peta{
+            display: none;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 3em;
+            color: purple;
+            transition: 1s;
+        }
+
+        a:hover{
+            transform: rotateY(180deg);
+        }
+    }
+}

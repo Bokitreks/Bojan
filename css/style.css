@@ -1,0 +1,980 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: 'Roboto Mono', monospace;
+  scroll-behavior: smooth;
+}
+
+body #naslov {
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+}
+
+body #naslov nav {
+  width: 80%;
+  margin: 0px auto;
+}
+
+@media (max-width: 920px) {
+  body #naslov nav {
+    width: 90%;
+  }
+}
+
+@media (max-width: 760px) {
+  body #naslov nav {
+    width: 100%;
+  }
+}
+
+body #naslov nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 480px) {
+  body #naslov nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body #naslov nav ul li {
+  margin: 2% 0%;
+}
+
+@media (max-width: 760px) {
+  body #naslov nav ul li {
+    margin: 5% 0%;
+  }
+}
+
+body #naslov nav ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+@media (max-width: 760px) {
+  body #naslov nav ul li a {
+    font-size: 1.1em;
+  }
+}
+
+body #naslov nav ul li a:hover {
+  color: purple;
+}
+
+body #glavni {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/ba5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #glavni .strana {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  margin-top: 5%;
+}
+
+@media (max-width: 920px) {
+  body #glavni .strana {
+    width: 25%;
+  }
+}
+
+@media (max-width: 760px) {
+  body #glavni .strana {
+    width: 40%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+body #glavni .strana .prvi {
+  font-size: 2.2em;
+  color: white;
+  padding-bottom: 8%;
+}
+
+@media (max-width: 480px) {
+  body #glavni .strana .prvi {
+    font-size: 1.6em;
+  }
+}
+
+body #glavni .strana .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 0%;
+  width: 100%;
+}
+
+body #glavni .strana .bar p {
+  font-size: 1.5em;
+  padding-bottom: 5%;
+  color: white;
+}
+
+@media (max-width: 760px) {
+  body #glavni .strana .bar p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  body #glavni .strana .bar p {
+    font-size: 0.65em;
+  }
+}
+
+body #glavni .strana .bar .bar1 {
+  width: 100%;
+  height: 10px;
+  border: 3px solid #000;
+  background-color: #4d4d4d;
+}
+
+body #glavni .strana .bar .bar1 .popuni {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8E2DE2), to(#4A00E0));
+  background: linear-gradient(#8E2DE2, #4A00E0);
+}
+
+body #glavni .strana .bar .bar1 .p1 {
+  width: 60%;
+}
+
+body #glavni .strana .bar .bar1 .p2 {
+  width: 80%;
+}
+
+body #glavni .strana .bar .bar1 .p3 {
+  width: 90%;
+}
+
+body #glavni .strana .bar .bar1 .p4 {
+  width: 80%;
+}
+
+body #glavni .strana .bar .bar1 .p5 {
+  width: 70%;
+}
+
+body #glavni .strana .bar .bar1 .p6 {
+  width: 50%;
+}
+
+body #glavni #sredina {
+  width: 40%;
+  text-align: center;
+  color: white;
+  margin-top: 15%;
+}
+
+@media (max-width: 1200px) {
+  body #glavni #sredina {
+    width: 50%;
+  }
+}
+
+@media (max-width: 920px) {
+  body #glavni #sredina {
+    width: 40%;
+  }
+}
+
+@media (max-width: 760px) {
+  body #glavni #sredina {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 28%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #glavni #sredina {
+    margin-top: 90%;
+  }
+}
+
+body #glavni #sredina h1 {
+  font-size: 4em;
+}
+
+@media (max-width: 1200px) {
+  body #glavni #sredina h1 {
+    font-size: 3.4em;
+  }
+}
+
+@media (max-width: 920px) {
+  body #glavni #sredina h1 {
+    font-size: 2.5em;
+  }
+}
+
+body #glavni #sredina p {
+  font-size: 2.3em;
+  padding-top: 2%;
+  text-shadow: 2px 2px tomato;
+}
+
+@media (max-width: 1200px) {
+  body #glavni #sredina p {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 920px) {
+  body #glavni #sredina p {
+    font-size: 1.5em;
+  }
+}
+
+body #glavni #sredina img {
+  width: 25%;
+  margin-top: 5%;
+}
+
+body #omeni {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  padding-top: 4%;
+}
+
+@media (max-width: 1200px) {
+  body #omeni {
+    padding-bottom: 15%;
+  }
+}
+
+@media (max-width: 920px) {
+  body #omeni {
+    padding-bottom: 30%;
+  }
+}
+
+@media (max-width: 760px) {
+  body #omeni {
+    padding-bottom: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #omeni {
+    padding-top: 25%;
+  }
+}
+
+body #omeni #levi {
+  width: 50%;
+  height: 100%;
+  color: white;
+}
+
+@media (max-width: 760px) {
+  body #omeni #levi {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #omeni #levi {
+    margin-top: 150px;
+  }
+}
+
+body #omeni #levi h2 {
+  font-size: 3em;
+  position: relative;
+  padding: 3% 0% 0% 3%;
+}
+
+body #omeni #levi h2:after {
+  content: "";
+  position: absolute;
+  width: 18%;
+  height: 4px;
+  background-color: purple;
+  bottom: -5px;
+  left: 30px;
+}
+
+@media (max-width: 480px) {
+  body #omeni #levi h2:after {
+    width: 40%;
+  }
+}
+
+body #omeni #levi p {
+  padding: 5% 2%;
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+@media (max-width: 760px) {
+  body #omeni #levi p {
+    padding: 15% 0%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #omeni #levi p {
+    font-size: 1em;
+  }
+}
+
+body #omeni #levi #socials {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1400px) {
+  body #omeni #levi #socials {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body #omeni #levi #socials {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #omeni #levi #socials {
+    margin: 0px auto;
+  }
+}
+
+body #omeni #levi #socials a {
+  font-size: 3em;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body #omeni #levi #socials a:nth-of-type(2) {
+  margin: 0% 13%;
+}
+
+@media (max-width: 1400px) {
+  body #omeni #levi #socials a:nth-of-type(2) {
+    margin: 0% 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #omeni #levi #socials a:nth-of-type(2) {
+    margin: 0% 35%;
+  }
+}
+
+body #omeni #levi #socials a:nth-of-type(1):hover {
+  color: yellow;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+body #omeni #levi #socials a:nth-of-type(2):hover {
+  color: purple;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+body #omeni #levi #socials a:nth-of-type(3):hover {
+  color: blue;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+body #omeni #desni {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 760px) {
+  body #omeni #desni {
+    width: 90%;
+    margin: 15% 0%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #omeni #desni {
+    width: 100%;
+  }
+}
+
+body #omeni #desni #slika {
+  width: 40%;
+  height: 60%;
+  background-image: url("../images/profi2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 4px solid #fff;
+}
+
+@media (max-width: 1400px) {
+  body #omeni #desni #slika {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body #omeni #desni #slika {
+    width: 70%;
+  }
+}
+
+@media (max-width: 920px) {
+  body #omeni #desni #slika {
+    width: 75%;
+  }
+}
+
+@media (max-width: 760px) {
+  body #omeni #desni #slika {
+    margin-top: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #omeni #desni #slika {
+    margin-bottom: 55%;
+  }
+}
+
+body #projekti {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+
+@media (max-width: 760px) {
+  body #projekti {
+    padding-top: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #projekti {
+    padding-top: 90%;
+  }
+}
+
+body #projekti h2 {
+  font-size: 3.8em;
+  position: relative;
+  padding: 5% 0%;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  body #projekti h2 {
+    font-size: 2.7em;
+    padding: 15% 0%;
+  }
+}
+
+body #projekti h2:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: purple;
+  bottom: 27%;
+  left: 15%;
+}
+
+@media (max-width: 1400px) {
+  body #projekti h2:after {
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 920px) {
+  body #projekti h2:after {
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 760px) {
+  body #projekti h2:after {
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #projekti h2:after {
+    bottom: 20%;
+  }
+}
+
+body #projekti #kutije {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5% 0%;
+}
+
+body #projekti #kutije .kutija {
+  width: 28%;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 4px solid white;
+}
+
+@media (max-width: 1400px) {
+  body #projekti #kutije .kutija {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body #projekti #kutije .kutija {
+    width: 40%;
+    margin: 4% 0%;
+  }
+}
+
+@media (max-width: 920px) {
+  body #projekti #kutije .kutija {
+    width: 45%;
+  }
+}
+
+@media (max-width: 760px) {
+  body #projekti #kutije .kutija {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #projekti #kutije .kutija {
+    width: 90%;
+  }
+}
+
+body #projekti #kutije .kutija .tekst {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+@media (max-width: 1400px) {
+  body #projekti #kutije .kutija .tekst {
+    width: 60%;
+  }
+}
+
+body #projekti #kutije .kutija .tekst h3 {
+  font-size: 1.7em;
+}
+
+body #projekti #kutije .kutija .tekst p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 480px) {
+  body #projekti #kutije .kutija .tekst p {
+    font-size: 1em;
+  }
+}
+
+body #projekti #kutije .kutija .tekst a {
+  display: block;
+  border: 4px solid white;
+  padding: 9% 10%;
+  text-decoration: none;
+  color: white;
+}
+
+body #projekti #kutije .kutija .tekst a:hover {
+  color: tomato;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 480px) {
+  body #projekti #kutije .kutija .tekst a {
+    font-size: 0.8em;
+  }
+}
+
+body #projekti #kutije .kutija .slika1 {
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-left: 4px solid white;
+}
+
+@media (max-width: 1400px) {
+  body #projekti #kutije .kutija .slika1 {
+    width: 40%;
+  }
+}
+
+body #projekti #kutije .kutija .s1 {
+  background-image: url("../images/projekat1.png");
+}
+
+body #projekti #kutije .kutija .s2 {
+  background-image: url("../images/projekat2.png");
+}
+
+body #projekti #kutije .kutija .s3 {
+  background-image: url("../images/projekat3.png");
+}
+
+body #footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+body #footer #kontakt {
+  width: 90%;
+  margin: 0% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 0%;
+}
+
+@media (max-width: 760px) {
+  body #footer #kontakt {
+    padding-top: 25%;
+  }
+}
+
+body #footer #kontakt h2 {
+  font-size: 3.4em;
+  padding-bottom: 2%;
+}
+
+@media (max-width: 480px) {
+  body #footer #kontakt h2 {
+    font-size: 2.3em;
+  }
+}
+
+body #footer #kontakt img {
+  width: 10%;
+}
+
+@media (max-width: 760px) {
+  body #footer #kontakt img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #footer #kontakt img {
+    width: 30%;
+  }
+}
+
+body #footer #kontakt form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  width: 30%;
+  margin: 5% 0%;
+}
+
+@media (max-width: 1200px) {
+  body #footer #kontakt form {
+    width: 40%;
+  }
+}
+
+@media (max-width: 920px) {
+  body #footer #kontakt form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 760px) {
+  body #footer #kontakt form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  body #footer #kontakt form {
+    width: 90%;
+    margin: 20% 0%;
+  }
+}
+
+body #footer #kontakt form label {
+  font-size: 1.6em;
+}
+
+body #footer #kontakt form .poseban {
+  padding: 1.5% 2%;
+  margin: 4% 0%;
+  width: 100%;
+  border: none;
+  border-top: 4px solid purple;
+  border-bottom: 4px solid purple;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #footer #kontakt form .poseban:focus {
+  border-left: 4px solid purple;
+  border-right: 4px solid purple;
+}
+
+body #footer #kontakt form .poseban::-webkit-input-placeholder {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body #footer #kontakt form .poseban:-ms-input-placeholder {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body #footer #kontakt form .poseban::-ms-input-placeholder {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body #footer #kontakt form .poseban::placeholder {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body #footer #kontakt form textarea {
+  resize: none;
+  margin: 4% 0%;
+  padding: 2% 0% 0% 2%;
+  width: 100%;
+  border: none;
+  border-top: 4px solid purple;
+  border-bottom: 4px solid purple;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #footer #kontakt form textarea::-webkit-input-placeholder {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body #footer #kontakt form textarea:-ms-input-placeholder {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body #footer #kontakt form textarea::-ms-input-placeholder {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body #footer #kontakt form textarea::placeholder {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body #footer #kontakt form textarea:focus {
+  border-left: 4px solid purple;
+  border-right: 4px solid purple;
+}
+
+body #footer #kontakt form #dugme {
+  display: block;
+  padding: 3% 9%;
+  margin: 3% 0%;
+  color: white;
+  font-size: 1.5em;
+  border: 4px solid purple;
+  background-color: black;
+}
+
+@media (max-width: 920px) {
+  body #footer #kontakt form #dugme {
+    padding: 5% 17%;
+  }
+}
+
+body #gore {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 480px) {
+  body #gore {
+    display: none;
+  }
+}
+
+body #gore a {
+  text-decoration: none;
+  font-size: 3em;
+  color: purple;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body #gore a:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */
